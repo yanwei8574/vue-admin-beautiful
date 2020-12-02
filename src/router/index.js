@@ -52,24 +52,6 @@ export const asyncRoutes = [
       },
     ],
   },
-  /* {
-    path: "/test",
-    component: Layout,
-    redirect: "noRedirect",
-    children: [
-      {
-        path: "test",
-        name: "Test",
-        component: () => import("@/views/test/index"),
-        meta: {
-          title: "test",
-          icon: "marker",
-          permissions: ["admin"],
-        },
-      },
-    ],
-  }, */
-
   {
     path: '/vab',
     component: Layout,
@@ -278,17 +260,6 @@ export const asyncRoutes = [
         name: 'Log',
         component: () => import('@/views/vab/errorLog/index'),
         meta: { title: '错误日志模拟', permissions: ['admin'] },
-      },
-      {
-        path:
-          'https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension',
-        name: 'ExternalLink',
-        meta: {
-          title: '外链',
-          target: '_blank',
-          permissions: ['admin', 'editor'],
-          badge: 'New',
-        },
       },
       {
         path: 'more',
